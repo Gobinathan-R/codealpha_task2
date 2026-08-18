@@ -1,16 +1,8 @@
-#!/usr/bin/env python3
-"""
-CodeAlpha Task 2: Stock Portfolio Tracker
-Author: Gobinathan R
-Description: A professional console-based stock portfolio tracker that allows users to 
-             manage their investments with hardcoded sample prices and CSV persistence.
-"""
 
 import csv
 import os
 import sys
 
-# Hardcoded stock price database (for demonstration purposes only)
 STOCK_PRICES = {
     "AAPL": 180.00,
     "TSLA": 250.00,
@@ -19,7 +11,6 @@ STOCK_PRICES = {
     "AMZN": 190.00
 }
 
-# CSV File Path (resides in the same directory as this script)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV_FILE_PATH = os.path.join(BASE_DIR, "portfolio.csv")
 
@@ -175,7 +166,6 @@ def save_to_csv(portfolio, filename=CSV_FILE_PATH):
                     f"{details['investment']:.2f}"
                 ])
             
-            # Summary Row
             total_val = calculate_total(portfolio)
             writer.writerow(["TOTAL INVESTMENT", "", "", f"{total_val:.2f}"])
             
