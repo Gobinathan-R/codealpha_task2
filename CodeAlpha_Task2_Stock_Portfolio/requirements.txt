@@ -1,0 +1,14 @@
+# ==========================================
+# CodeAlpha Task 2: Stock Portfolio Tracker
+# ==========================================
+# 
+# This project is built entirely using the Python 3 Standard Library.
+# No external third-party packages are required.
+# 
+# Standard libraries used:
+# - csv (For saving and loading portfolio data)
+# - os (For checking file existence and clearing console)
+# - sys (For exit functions)
+# 
+# To run this project:
+# python main.py
